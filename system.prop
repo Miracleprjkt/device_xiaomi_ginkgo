@@ -30,6 +30,20 @@ debug.cpurend.vsync=false
 persist.lcd.cabc_mode=1
 persist.lcd.hbm_mode=0
 
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
+# dalvik
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+
+# Fastbootd
+ro.fastbootd.available=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
