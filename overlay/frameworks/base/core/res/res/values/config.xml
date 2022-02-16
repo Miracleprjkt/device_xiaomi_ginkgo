@@ -846,6 +846,10 @@
     <!-- Default values for LiveDisplay -->
     <bool name="config_enableLiveDisplay">false</bool>
 
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+     <bool name="config_multiColorBatteryLed">false</bool>
+
      <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
      <bool name="config_intrusiveBatteryLed">true</bool>
      
@@ -857,6 +861,7 @@
     <bool name="config_cleanupUnusedFingerprints">false</bool>
 
     <!-- Smart charging -->
+
     <bool name="config_smartChargingAvailable">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
