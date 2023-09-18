@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2021 Paranoid Android
+ * Copyright (C) 2024 PixelOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,14 +19,13 @@ package org.lineageos.settings.display;
 
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class LcdFeaturesPreferenceActivity extends CollapsingToolbarBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new LcdFeaturesPreferenceFragment())
+                .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new LcdFeaturesPreferenceFragment())
                 .commit();
     }
 }

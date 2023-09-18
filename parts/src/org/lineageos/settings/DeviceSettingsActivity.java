@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2020 Paranoid Android
+ * Copyright (C) 2024 PixelOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +23,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
 
@@ -30,12 +30,12 @@ public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fragment fragment = getFragmentManager().findFragmentById(R.id.content_frame);
+        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
         DeviceSettingsFragment deviceSettingsFragment;
         if (fragment == null) {
             deviceSettingsFragment = new DeviceSettingsFragment();
             getFragmentManager().beginTransaction()
-                    .add(R.id.content_frame, deviceSettingsFragment)
+                    .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, deviceSettingsFragment)
                     .commit();
         }
     }
