@@ -33,11 +33,20 @@ persist.lcd.hbm_mode=0
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
-# FUSE passthrough
-persist.sys.fuse.passthrough.enable=true
-
 # Graphics
 ro.surface_flinger.enable_frame_rate_override=false
+
+# Fling
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true 
+persist.vendor.qti.inputopts.enable=true 
+persist.vendor.qti.inputopts.movetouchslop=0.6 
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+>>>>>>> 210ab6e34 (ginkgo: Move FUSE Passthrough to device.mk)
 
 # IMS
 persist.vendor.ims.disableADBLogs=1
