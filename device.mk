@@ -1,11 +1,7 @@
 #
-<<<<<<< HEAD
 # Copyright (C) 2018-2019 The LineageOS Project
 # Copyright (C) 2020 Paranoid Android
 # Copyright (C) 2023 The LineageOS Project
-=======
-# Copyright (C) 2020-2024 The LineageOS Project
->>>>>>> a14169e0 (ginkgo: Use common libqti-perfd-client and power-libperfmgr)
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -328,7 +324,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr
+    android.hardware.power-service.xiaomi-libperfmgr
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -421,8 +417,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
