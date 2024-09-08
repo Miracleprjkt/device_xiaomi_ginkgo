@@ -105,6 +105,7 @@
             <Limit name="performance-point-1280x720" value="480" />
             <Feature name="adaptive-playback" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.avc.decoder.low_latency" type="video/avc">
             <Alias name="OMX.qcom.video.decoder.avc.low_latency" />
@@ -141,6 +142,7 @@
             <Feature name="adaptive-playback" />
             <Feature name="secure-playback" required="true" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.decoder" type="video/hevc" >
             <Alias name="OMX.qcom.video.decoder.hevc" />
@@ -160,6 +162,7 @@
             <Limit name="performance-point-1280x720" value="480" />
             <Feature name="adaptive-playback" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.decoder.secure" type="video/hevc" >
             <Alias name="OMX.qcom.video.decoder.hevc.secure" />
@@ -177,6 +180,7 @@
             <Feature name="adaptive-playback" />
             <Feature name="secure-playback" required="true" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.vp8.decoder" type="video/x-vnd.on2.vp8" >
             <Alias name="OMX.qcom.video.decoder.vp8" />
@@ -195,6 +199,7 @@
             <Limit name="performance-point-1280x720" value="240" />
             <Feature name="adaptive-playback" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.vp9.decoder" type="video/x-vnd.on2.vp9" >
             <Alias name="OMX.qcom.video.decoder.vp9" />
@@ -214,6 +219,7 @@
             <Limit name="performance-point-1280x720" value="480" />
             <Feature name="adaptive-playback" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >
             <Alias name="OMX.qcom.video.decoder.vp9.secure" />
@@ -231,6 +237,7 @@
             <Feature name="adaptive-playback" />
             <Feature name="secure-playback" required="true" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
     </Decoders>
 
@@ -254,6 +261,7 @@
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Feature name="intra-refresh" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc">
             <Alias name="OMX.qcom.video.encoder.hevc" />
@@ -274,6 +282,7 @@
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Feature name="intra-refresh" />
             <Feature name="can-swap-width-height" value="1" />
+
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc">
             <Limit name="size" min="96x96" max="512x512" />
