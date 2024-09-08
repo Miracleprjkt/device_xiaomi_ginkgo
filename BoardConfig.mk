@@ -57,6 +57,9 @@ TARGET_USE_QTI_BT_STACK := false
 TARGET_BOOTLOADER_BOARD_NAME := trinket
 TARGET_NO_BOOTLOADER := true
 
+# Exclude QCOM powerhal manifest
+TARGET_PROVIDES_POWERHAL := true
+
 # Camera
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
