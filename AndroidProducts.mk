@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_ginkgo.mk
+    $(LOCAL_DIR)/lineage_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_ginkgo-ap2a-user \
-    aosp_ginkgo-ap2a-userdebug \
-    aosp_ginkgo-ap2a-eng
+    lineage_ginkgo-user \
+    lineage_ginkgo-userdebug \
+    lineage_ginkgo-eng
