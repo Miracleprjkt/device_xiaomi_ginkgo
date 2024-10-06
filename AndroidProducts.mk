@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_ginkgo.mk
+    $(LOCAL_DIR)/hentai_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_ginkgo-user \
-    voltage_ginkgo-userdebug \
-    voltage_ginkgo-eng
+    hentai_ginkgo-user \
+    hentai_ginkgo-userdebug \
+    hentai_ginkgo-eng
