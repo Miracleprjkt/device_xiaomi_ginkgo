@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ginkgo.mk
+    $(LOCAL_DIR)/voltage_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ginkgo-user \
-    lineage_ginkgo-userdebug \
-    lineage_ginkgo-eng
+    voltage_ginkgo-user \
+    voltage_ginkgo-userdebug \
+    voltage_ginkgo-eng
