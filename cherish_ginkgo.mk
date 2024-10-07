@@ -24,14 +24,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common hentai stuff
+# Inherit some common cherish stuff
+CHERISH_VANILLA := true
+CHERISH_MAINTAINER := FATTT⚡
+CHERISH_CHIPSET := SM6150
+CHERISH_BATTERY := 4000mAh
+CHERISH_DISPLAY := 1080x2340 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_EXCLUDES_AUDIOFX := true
-$(call inherit-product, vendor/hentai/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := hentai_ginkgo
+PRODUCT_NAME := cherish_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T

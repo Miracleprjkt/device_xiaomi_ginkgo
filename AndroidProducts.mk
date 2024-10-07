@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/hentai_ginkgo.mk
+    $(LOCAL_DIR)/cherish_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    hentai_ginkgo-user \
-    hentai_ginkgo-userdebug \
-    hentai_ginkgo-eng
+    cherish_ginkgo-user \
+    cherish_ginkgo-userdebug \
+    cherish_ginkgo-eng
