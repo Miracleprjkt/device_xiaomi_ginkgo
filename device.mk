@@ -269,6 +269,8 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
