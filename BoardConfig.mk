@@ -66,11 +66,7 @@ TARGET_USES_MIUI_CAMERA := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
-TARGET_USES_DRM_PP := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
-TARGET_USES_COLOR_METADATA := true
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -130,6 +126,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-rastamod
 TARGET_KERNEL_ADDITIONAL_FLAGS := AR=llvm-ar AS=llvm-as NM=llvm-nm LD=ld.lld OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf STRIP=llvm-strip HOSTAR=llvm-ar HOSTAS=llvm-as HOSTNM=llvm-nm HOSTLD=ld.lld HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
+# Media 
+TARGET_USES_ION := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
