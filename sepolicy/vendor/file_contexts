@@ -51,3 +51,6 @@
 
 # Data files
 /data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0
+
+# Process and system statistics files
+/proc/stat u:object_r:proc_stat:s0

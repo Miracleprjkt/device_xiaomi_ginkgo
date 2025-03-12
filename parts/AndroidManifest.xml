@@ -156,5 +156,79 @@
             </intent-filter>
         </service>
 
+        <!-- TileHandler activity -->
+        <activity
+            android:name=".TileHandlerActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <!-- Monitor Overlay -->
+        <activity
+            android:name=".monitor.MonitorSettingsActivity"
+            android:label="@string/monitor_title"
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+		<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system" />
+	    <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_monitor" />
+	    <meta-data
+                android:name="com.android.settings.icon_tintable"
+                android:value="true" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-255" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/monitor_summary" />
+        </activity>
+
+        <!-- Monitor AppSelector -->
+        <activity android:name=".monitor.MonitorAppSelectorActivity" />
+        <activity android:name=".monitor.MonitorAppRemoverActivity" />
+
+        <!-- Monitor Overlay Tile Service -->
+        <service
+            android:name=".monitor.MonitorTileService"
+            android:label="@string/monitor_tile_label"
+            android:icon="@drawable/ic_monitor"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
+        <!-- Monitor Service -->
+        <service
+            android:name=".monitor.MonitorService"
+            android:exported="false" />
+
+        <!-- Monitor BootReceiver -->
+        <receiver
+            android:name=".monitor.MonitorBootReceiver"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+        </receiver>
     </application>
 </manifest>

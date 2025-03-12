@@ -136,4 +136,13 @@
     <!-- Help texts -->
     <string name="doze_settings_help_title">Help</string>
     <string name="doze_settings_help_text">These features use sensor events to launch a doze notification pulse. The chosen sensor is only enabled when the device receives a notification, this helps to reduce battery usage. There is also an option to enable the chosen sensor as soon as the screen turns off, this will cause higher battery usage.\n\nNOTE: The proximity sensor gestures may break deep sleep completely. Use them with caution.</string>
+
+    <!-- Monitor Overlay -->
+    <string name="monitor_title">Monitor</string>
+    <string name="monitor_summary">Enable the monitor overlay (FPS, Temp, etc.)</string>
+    <string name="overlay_permission_required">Overlay permission is required</string>
+    <string name="overlay_permission_granted">Overlay permission granted</string>
+    <string name="overlay_permission_denied">Overlay permission denied</string>
+    <string name="monitor_tile_label">Monitor</string>
+    <string name="monitor_tile_description">Toggle the monitor overlay</string>
 </resources>
