@@ -7,8 +7,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/genesis_ginkgo.mk
-
-COMMON_LUNCH_CHOICES := \
-    genesis_ginkgo-user \
-    genesis_ginkgo-userdebug \
-    genesis_ginkgo-eng
