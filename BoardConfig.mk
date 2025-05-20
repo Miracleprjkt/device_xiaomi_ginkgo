@@ -104,8 +104,12 @@ ODM_MANIFEST_WILLOW_FILES := $(DEVICE_PATH)/configs/hidl/manifest_willow.xml
 ODM_MANIFEST_SKUS += willow
 
 # Init
+<<<<<<< HEAD
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ginkgo
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
+=======
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_alioth
+>>>>>>> cfed5c90 (alioth: : move TARGET_INIT_VENDOR_LIB to soong_config)
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
