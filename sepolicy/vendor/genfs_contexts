@@ -3,8 +3,8 @@ genfscon sysfs /module/battery_saver/parameters/enabled u:object_r:sysfs_battery
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps       u:object_r:sysfs_graphics:s0
 
 # Wakeup source stats
-genfscon sysfs /devices/platform/soc/1610000.qcom,msm-eud/wakeup/wakeup                                                                                                                                                        u:object_r:sysfs_wakeup:s0                                                                                                                                                  u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup/wakeup                                                                                                                                                               u:object_r:sysfs_wakeup:s0                                                                                                                                                                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1610000.qcom,msm-eud/wakeup/wakeup                                                                                                                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup/wakeup                                                                                                                                                               u:object_r:sysfs_wakeup:s0                                                                                                                                                                    
 
 # Power
 genfscon proc /sys/kernel/sched_boost u:object_r:proc_sched_boost:s0
