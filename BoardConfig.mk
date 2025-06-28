@@ -202,5 +202,8 @@ QC_WIFI_HIDL_FEATURE_DUAL_AP := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Inherit from the private keys
+-include vendor/lineage-priv/keys/keys.mk 
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk
