@@ -64,7 +64,7 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
-    chown system graphics /sys/class/drm/sde-crtc-0/measured_fpsAdd commentMore actions
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
     chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
 
     chown system system /sys/class/power_supply/battery/temp
