@@ -24,30 +24,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# CPU
-AXION_CPU_SMALL_CORES := 0,1,2,3
-AXION_CPU_BIG_CORES := 4,5,6,7
-AXION_CPU_BG := 0-2
-AXION_CPU_FG := 0-7
-AXION_CPU_LIMIT_BG := 0-1
-AXION_CPU_UNLIMIT_UI := 0-7
-AXION_CPU_LIMIT_UI := 0-4
-AXION_CPU_DISPLAY := 4-7
-AXION_CPU_AUDIO := 0-3
-
 # Inherit some common Axion stuff
 BYPASS_CHARGE_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-AXION_CAMERA_REAR_INFO := 48 MP
-AXION_CAMERA_FRONT_INFO := 13 MP
-AXION_MAINTAINER := F4T3
-AXION_PROCESSOR := Snapdragon 665
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_ginkgo
+PRODUCT_NAME := yaap_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
